@@ -1,0 +1,67 @@
+/* My incorrect first attempt
+#Number {
+  color: black;
+  background-color: lightcoral;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Number-2 {
+    color: blue;
+    font-size: 36px;
+}
+
+.Number-3 {
+    color: black;
+    background-color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+  }
+
+.Number-4 {
+    color: black;
+    background-color: lightgreen;
+    font: bold;
+    font-size: 24px;
+}
+*/
+
+/* 
+Self Check
+	Do the odd numbered p elements share a class?
+No
+	Do the even numbered div elements have unique IDs?
+Yes
+	Does the Number 3 element have multiple classes?
+No
+*/
+
+/* The following is the correct method */
+
+.odd {
+    background-color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.adjust-font-size {
+    font-size: 24px;
+}
+
+#two {
+    color: blue;
+    font-size: 36px;
+}
+
+#four {
+    background-color: lightgreen;
+    font: bold;
+}
+
+/*
+    In the id selector 'four' below, we could have also
+    added a rule to set the font size to 24px.
+
+    However, since the elements 'Number 3' and 'Number 4'
+    in the HTML file share the same font size, we reused
+    the 'adjust-font-size' class above to help reduce
+    duplicate code.
+*/
